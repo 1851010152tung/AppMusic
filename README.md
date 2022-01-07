@@ -1,1 +1,6 @@
-# AppMusic
+![1](https://user-images.githubusercontent.com/73160921/148509622-29b75dc3-8a01-488b-94aa-f43f291158f9.png)
+![2](https://user-images.githubusercontent.com/73160921/148509646-26dcdf43-8f0d-46ac-9b35-a8a109b6fcb4.png)
+![3](https://user-images.githubusercontent.com/73160921/148509653-78e44ae0-d3bb-45ca-aeb4-b767f8576424.png)
+![4](https://user-images.githubusercontent.com/73160921/148509659-dbb9b353-c423-4e84-8c8d-8ecae3ae09d7.png)
+![6](https://user-images.githubusercontent.com/73160921/148509661-fd7084a4-815f-42bd-87eb-dd01427189d5.png)
+![7](https://user-images.githubusercontent.com/73160921/148509664-66d5982b-e096-4845-aaa6-cb8b1bc52252.png)
