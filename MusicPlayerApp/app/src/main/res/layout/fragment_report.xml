@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signup"
+    tools:context=".SignUp">
+
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="22dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="35dp"
+        android:src="@drawable/icon_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:layout_width="151dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.020" />
+
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:lineHeight="38dp"
+        android:text="Report"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:layout_width="226dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:lineHeight="38dp"
+        android:text="Thank you!"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="269dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <EditText
+            android:id="@+id/edt_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_edt_sign_up"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="What is your issue?"
+            android:paddingLeft="25dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9E9A9A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_nd"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:paddingTop="20dp"
+            android:gravity="top"
+            android:background="@drawable/bg_edt_sign_up"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Type the issue here"
+            android:inputType="textMultiLine|text"
+            android:paddingLeft="25dp"
+            android:textColor="@color/black"
+            android:textColorHint="#9E9A9A"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="65dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/btn_next_signin_signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

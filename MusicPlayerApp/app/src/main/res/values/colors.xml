@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#3B3B3B</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pink">#F772BD</color>
+    <color name="light_blue">#94B7FC</color>
+    <color name="colorPrimary">#45b5ec</color>
+    <color name="blue_purple">#8C90FF</color>
+    <color name="light_purple">#A389ED</color>
+    <color name="background_category">#E6EAF8</color>
+    <color name="colorPrimaryDark">#1c8fc7</color>
+    <color name="colorAccent">#000000</color>
+    <color name="light_gray">#F9F9F9</color>
+    <color name="primaryTitleColor">#FFFFFF</color>
+
+
+    <color name="unselectedColorNav">#D5DAED</color>
+    <color name="brown_black">#737373</color>
+
+    <color name="iconNav" tools:ignore="ReferenceType">@drawable/color_linear_blue_purple</color>
+    <color name="icon"></color>
+
+    <color name="TextColor">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="drawer_color">#335763</color>
+    <color name="light_color">#fafafa</color>
+    <color name="OffColor">#A845de</color>
+    <color name="gray_color">#9c9b9b</color>
+
+</resources>

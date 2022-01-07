@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //Dung hieu ung Animation trong android - Move (Hieu ung di chuyen)
+    //Su dung the translate de thay doi vi tri cua doi tuong.
+    //Su dung android:fromXDelta, android:fromYDelta cho huong X
+
+    <translate
+        android:fromXDelta="0%"
+        android:fromYDelta="-100%"
+        android:duration="2000"/> //thoi luong hoan thanh
+
+    //Su dung the alpha de dinh nghia gia tri alpha va gia tri alpha se duoc tang tu 0 -> 1
+    <alpha
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0"
+        android:duration="2000"/>
+</set>

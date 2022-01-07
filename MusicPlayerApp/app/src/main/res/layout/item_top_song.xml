@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/light_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="?attr/listPreferredItemHeight">
+
+    <RelativeLayout
+        android:id="@+id/pre_layout"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteY="14dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgrank"
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/top5" />
+
+        <TextView
+            android:id="@+id/tvindex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageTextContainer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="10dp"
+        android:layout_toRightOf="@id/pre_layout"
+        app:layout_constraintStart_toEndOf="@+id/pre_layout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="9dp">
+
+        <ImageView
+            android:id="@+id/img_song"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            tools:visibility="visible" />
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/tv_namesong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/color_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageTextContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/tv_singer"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="16dp"
+        android:text="artist"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/color_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageTextContainer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namesong"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="145dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_singer">
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000 "
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/blue_purple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+            android:text=" Likes"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

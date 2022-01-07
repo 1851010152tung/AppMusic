@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Truc Lam/.gradle/caches/transforms-2/files-2.1/16b75959963d81b5216ed9cfaf8a9675/jetified-AestheticDialogs-1.3.6/res/layout/dialog_emoji.xml" value="0.4" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.22162162162162163" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/drawable/ic_keyboard_arrow_left_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/activity_tik_tok_video.xml" value="0.1" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_contact_list.xml" value="0.2063063063063063" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_favorite.xml" value="0.20765765765765765" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_genres.xml" value="0.2063063063063063" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_liked_song.xml" value="0.264" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_list_song.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_profile.xml" value="0.176" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/fragment_tik_tok.xml" value="0.10576077396657872" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/layout/item_container_video.xml" value="0.152" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/MusicPlayerAppAndroid/MusicPlayerApp/app/src/main/res/menu/search_menu.xml" value="0.19414414414414413" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/drawable-xxxhdpi/background_button_dialog_about_us.xml" value="0.23066666666666666" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/drawable-xxxhdpi/background_button_dialog_support.xml" value="0.23066666666666666" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/dialog_about_us.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/dialog_support.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/fragment_genres.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/fragment_home.xml" value="0.10729991204925242" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/item_albums.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/item_dialog_support.xml" value="0.21981981981981982" />
+        <entry key="..\:/Users/Truc Lam/Documents/Tai_Lieu_Dai_Hoc/Do An/SOURCE CODE/MusicPlayerApp/app/src/main/res/layout/loading.xml" value="0.21981981981981982" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

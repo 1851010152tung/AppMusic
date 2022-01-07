@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".Home.HomeFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolBarHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimaryVariant"
+            app:expandedTitleTextAppearance="@style/expandedBarTextStyle"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    //background collapse radius
+
+                    <ImageView
+                        android:id="@+id/home_imageview"
+                        android:layout_width="0dp"
+                        android:layout_height="260dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg_home"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <View
+                        android:id="@+id/home_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_home"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    //logo Colossal Space Music
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/logo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    //button search
+
+                    <ImageView
+                        android:id="@+id/btn_search"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="160dp"
+                        android:src="@drawable/home_search"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_avatar"
+                        app:layout_constraintHorizontal_bias="0.71"
+                        app:layout_constraintStart_toEndOf="@+id/imageView8"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    //avatar
+
+                    <ImageView
+                        android:id="@+id/btn_avatar"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/home_avatar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView8"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    //TextView intro choose your mood today!
+
+                    <TextView
+                        android:id="@+id/tv_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="My mood today!"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/home_imageview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.127"
+                        app:layout_constraintStart_toStartOf="@+id/home_imageview"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    //Mood: Carefree/normal/happy - Sad - Love - Peaceful - Cool
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_intro"
+                        app:layout_constraintVertical_bias="0.4">
+
+                        <Button
+                            android:id="@+id/btn_mood_carefree"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginRight="9dp"
+                            android:background="@drawable/mood_carefree" />
+
+                        <Button
+                            android:id="@+id/btn_mood_sad"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginRight="9dp"
+                            android:background="@drawable/mood_sad" />
+
+                        <Button
+                            android:id="@+id/btn_mood_love"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginRight="9dp"
+                            android:background="@drawable/mood_love" />
+
+                        <Button
+                            android:id="@+id/btn_mood_peaceful"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_marginRight="9dp"
+                            android:background="@drawable/mood_peaceful" />
+
+                        <Button
+                            android:id="@+id/btn_mood_cool"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:background="@drawable/mood_cool" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            //Toolbar
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:elevation="10dp"
+                app:layout_collapseMode="pin"
+                app:titleTextColor="@color/white">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                //Chay quang cao/ Images slider
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:clipToPadding="true"
+                    app:auto_cycle="true"
+                    app:delay="0"
+                    app:period="1200"
+                    app:unselected_dot="@drawable/imgslider_unselected_dot"
+                    app:selected_dot="@drawable/imgslider_selected_dot"
+                    android:layout_centerInParent="true"
+                    android:overScrollMode="always"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            //Button Albums, Songs, Artists, Playlists
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/slider">
+
+                <Button
+                    android:id="@+id/btn_albums"
+                    android:layout_width="78dp"
+                    android:layout_height="53dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_btn_cate_albums" />
+
+                <Button
+                    android:id="@+id/btn_songs"
+                    android:layout_width="78dp"
+                    android:layout_height="53dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_btn_cate_songs" />
+
+                <Button
+                    android:id="@+id/btn_artists"
+                    android:layout_width="78dp"
+                    android:layout_height="53dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/bg_btn_cate_artists" />
+
+                <Button
+                    android:id="@+id/btn_playlists"
+                    android:layout_width="78dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/bg_btn_cate_playlists" />
+            </LinearLayout>
+
+
+            //Top Charts
+            <LinearLayout
+                android:id="@+id/ln_topCharts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="140dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/tv_top_charts" />
+
+                    <TextView
+                        android:id="@+id/tv_viewall"
+                        android:layout_width="53dp"
+                        android:layout_height="31dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="185dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/view_all"
+                        android:textColor="@color/brown_black"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvTopCharts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:scrollbarThumbVertical="@color/gray_color"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            //Trending Playlists
+            <LinearLayout
+                android:id="@+id/ln_trendingPlaylists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_topCharts">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/tv_trending_playlists" />
+
+                    <!--
+                    <TextView
+                        android:id="@+id/tv_viewall2"
+                        android:layout_width="53dp"
+                        android:layout_height="31dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="152dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/view_all"
+                        android:textColor="@color/brown_black"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                        -->
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="6dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_topCharts">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcvTrendingPlaylists"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="vertical"
+                            android:scrollbarStyle="outsideOverlay"
+                            android:scrollbarThumbVertical="@color/gray_color"
+                            />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+
+            //Space
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ln_trendingPlaylists"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

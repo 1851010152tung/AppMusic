@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17sp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/textviewplaynhacindex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Ten ca khuc"
+            android:maxLines="1"
+            android:layoutDirection="ltr"
+            android:singleLine="true"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_toRightOf="@+id/textviewplaynhacindex"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textviewplaynhactenbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="12sp"
+            android:text="Ca si"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat"
+            android:layout_toRightOf="@+id/textviewplaynhacindex"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textviewplaynhactenbaihat"
+            android:id="@+id/textviewplaynhactencasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ic_choose"
+            android:layout_width="30dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/ic_baseline_backspace_24"
+
+            />
+
+        <es.claucookie.miniequalizerlibrary.EqualizerView
+            android:id="@+id/equalizer_view"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="57dp"
+            custom:animDuration="3500"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
